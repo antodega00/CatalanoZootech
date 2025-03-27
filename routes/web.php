@@ -20,4 +20,15 @@ Route::get('/partnership-agriben', function () {
     return view('partnership-agriben'); // Nome del file nella cartella views
 })->name('partnership.agriben');
 
+Route::get('/identificazione-bovini', function () {
+    return view('identificazione-bovini'); // Nome del file nella cartella views
+})->name('identificazione.bovini');
+
+Route::get('/identificazione-ovini', function () {
+    return view('identificazione-ovini'); // Nome del file nella cartella views
+})->name('identificazione.ovini');
+
+Route::get('/identificazione-suini', function () {
+    return view('identificazione-suini'); // Nome del file nella cartella views
+})->name('identificazione.suini');
 

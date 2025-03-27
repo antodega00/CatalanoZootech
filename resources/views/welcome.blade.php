@@ -37,8 +37,8 @@
     <header id="header" class="header d-flex align-items-center fixed-top">
         <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
-            <a href="index.html" class="logo d-flex align-items-center me-auto">
-                <img src="assets/img/logo_catalanozootech.png" alt="Catalano Zootech" class="img-logo" style="height: 60px;"> <!-- Modifica il valore height -->
+            <a href="/" class="logo d-flex align-items-center me-auto">
+                <img src="assets/img/logo_ctz.png" alt="Catalano Zootech" class="img-logo" style="height: 100px; border-radius: 50%;">
             </a>
 
             <nav id="navmenu" class="navmenu">
@@ -58,8 +58,8 @@
     <header id="header" class="header d-flex align-items-center fixed-top" style="background-color: rgba(21, 34, 43, 0.85);">
         <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
-            <a href="index.html" class="logo d-flex align-items-center me-auto">
-                <img src="assets/img/logo_catalanozootech.png" alt="Catalano Zootech" class="img-logo" style="height: 60px;"> <!-- Modifica il valore height -->
+            <a href="/" class="logo d-flex align-items-center me-auto">
+                <img src="assets/img/logo_ctz.png" alt="Catalano Zootech" class="img-logo" style="height: 100px; border-radius: 50%;"> <!-- Modifica il valore height -->
             </a>
 
             <nav id="navmenu" class="navmenu">
@@ -79,47 +79,56 @@
 
     @yield('content')
 
+    <a href="https://wa.me/3318098020" class="whatsapp-float" target="_blank">
+        <div class="icon">
+            {{-- <i class="bi bi-easel"></i> --}}
+            <img src="assets/img/whatsapp.png" class="" alt="" style=" width: 80px; height: 80px;">
+          </div>
+    </a>
+
 
     <footer id="footer" class="footer dark-background">
-
         <div class="container footer-top">
           <div class="row gy-4">
-              <div class="col-lg-4 col-md-6 footer-about" style="padding-top: 50px;">
-                  <a href="/" class="logo d-flex align-items-center">
-                  <span class="sitename">Catalano Zootech</span>
-                  </a>
-              </div>
-              <div class="col-lg-4 col-md-6 footer-contact pt-3" style="padding-left: 100px;">
-                  <a href="#contact" class="logo d-flex align-items-center">
-                      <span class="sitename" style="font-size: 24px;">Contatti</span>
-                      </a>
-                  <p style="padding-top: 20px;">Corso Sicilia, 43</p>
-                  <p>98051 Barcellona Pozzo di Gotto ME</p>
-                  <p class="mt-3"><strong>Telefono:</strong> <span>+39 3318098020</span></p>
-                  <p><strong>Email:</strong> <span>catalanozootech@example.com</span></p>
-              </div>
-
-              <div class="col-lg-4 col-md-6 social-links d-flex mt-4" style="padding-top: 50px; padding-left: 180px;">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-              </div>
-          </div>
-
-         </div>
-
-        <div class="container copyright text-center mt-4">
-          <p>©<span>Copyright All Rights Reserved</span></p>
-          <div class="credits">
-            <!-- All the links in the footer should remain intact. -->
-            <!-- You can delete the links only if you've purchased the pro version. -->
-            <!-- Licensing information: https://bootstrapmade.com/license/ -->
-            <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-            Designed by <a href="">ADG WebLab</a>
+            <!-- Logo e nome (centrato su mobile) -->
+            <div class="col-12 col-lg-4 footer-about text-center">
+              {{-- <a href="/">
+                <img src="assets/img/logo_catalanozootech.png" alt="Catalano Zootech" class="img-fluid" style="max-width: 300px;">
+              </a> --}}
+                <a href="/">
+                <img src="assets/img/logo_ctz.png" alt="Catalano Zootech" class="img-fluid"
+                style="max-width: 170px; border-radius: 50%;">
+                </a>
+            </div>
+            <!-- Informazioni di contatto (centrate su mobile) -->
+            <div class="col-12 col-lg-4 footer-contact pt-3 text-center">
+              <a href="#contact" class="logo d-flex align-items-center justify-content-center">
+                <span class="sitename" style="font-size: 24px;">Contatti</span>
+              </a>
+              <p class="mt-3">Corso Sicilia, 43</p>
+              <p>98051 Barcellona Pozzo di Gotto ME</p>
+              <p class="mt-3"><strong>Telefono:</strong> <span>+39 3318098020</span></p>
+              <p><strong>Email:</strong> <span>catalanozootech@example.com</span></p>
+            </div>
+            <!-- Social links (centrati su mobile) -->
+            <div class="col-12 col-lg-4 social-links d-flex justify-content-center align-items-center mt-4">
+                <div class="m">
+                    <span class="sitename" style="font-size: 24px; color: RGB(255, 74, 23);">Social</span>
+                </div>
+                <a href="https://www.facebook.com/CatalanoZootech" class="mx-3"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/catalanozootech/"><i class="bi bi-instagram"></i></a>
+            </div>
           </div>
         </div>
 
+        <div class="container copyright text-center mt-4">
+          <p>©<span> Copyright All Rights Reserved</span></p>
+          <div class="credits">
+            Designed by <a href="/">ADG WebLab</a>
+          </div>
+        </div>
       </footer>
+
 
       <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

@@ -4,7 +4,7 @@
   <main class="main">
 
     <section style="padding-top: 130px;" class="d-flex align-items-center justify-content-center">
-        <img src="/assets/img/logo_digitanimal.png" alt="logo digitanimal" >
+        <img class="img-fluid logo-responsive" src="/assets/img/logo_digitanimal.png" alt="logo digitanimal">
     </section>
 
 
@@ -20,7 +20,7 @@
             <div class="row gy-4">
 
                 <!-- Colonna sinistra divisa in 2 righe -->
-                <div class="col-md-7" style="padding-right: 150px; padding-left: 200px;">
+                <div class="col-md-7 carousel-padding">
                     <div class="row h-100">
 
                         <!-- Prima riga: Titolo e descrizione -->
@@ -107,13 +107,16 @@
                     </div>
                 </div>
 
-                <!-- Colonna destra: Griglia 2x2 -->
-                <div class="col-md-5" style="padding-top: 47px; padding-right: 100px;">
+
+
+
+                <!-- Colonna destra Desktop -->
+                <div class="col-md-5 desktop-version" style="padding-top: 47px; padding-right: 100px;">
 
                     <!-- Prima riga: Titolo e descrizione -->
                     <div class="container section-title" data-aos="fade-up" style="text-align: center;">
                         <p>Scopri i dispositivi<br></p>
-                      </div><!-- End Section Title -->
+                    </div><!-- End Section Title -->
 
                     <div class="row gy-4">
 
@@ -173,12 +176,26 @@
                     </div>
                 </div>
 
+                {{-- Colonna destra mobile --}}
+                <div class="col-md-6 mobile-version" data-aos="fade-up" data-aos-delay="400" style="padding: 60px;">
+                    <div class="service-item d-flex flex-column position-relative h-100">
+                        <div class="mb-3 text-center">
+                            <img src="assets/img/cow_gps.png" alt="Icona GPS Caprini" class="icon-partnership-img">
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <button type="button" class="btn btn-primary custom-btn" data-bs-toggle="modal" data-bs-target="#boviniModal">
+                                Scopri i localizzatori
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
 
         <div class="container-center">
-            <div data-aos="fade-up" style="text-align: center; padding-top: 50px; color: RGB(39, 61, 78);">
-              <h1 style="font-size: 30px; font-weight: bold;">Scopri le nostre promo per l'acquisto di 3, 5 o 10 dispositivi.<br>Più acquisti più risparmi!<br>Spedizioni in tutta Italia, anche in contrassegno.<br><br><a href="{{ url('/#contact') }}">
+            <div data-aos="fade-up" style="text-align: center; padding-top: 50px; color: RGB(39, 61, 78); padding: 20px;">
+              <h1 class="font-digitanimal">Scopri le nostre promo per l'acquisto di 3, 5 o 10 dispositivi.<br>Più acquisti più risparmi!<br>Spedizioni in tutta Italia, anche in contrassegno.<br><br><a href="{{ url('/#contact') }}">
                 Contattaci
               </a>
                per maggiori info su prezzi e spedizioni!</h1>
@@ -234,19 +251,19 @@
             <h2></h2>
             <p>Dettagli sul prodotto<br></p>
           </div><!-- End Section Title -->
-        <div class="container">
+        <div class="container" style="padding: 0px;">
           <div class="row">
             <!-- Prima colonna -->
-            <div class="col-md-4">
+            <div class="col-md-4" style="padding: 35px;">
               <div class="grid-item p-3 border text-center">
                 <div class="mb-3 text-center">
                     <img src="assets/img/img_partnership/battery.png" alt="Icon battery" class="icon-partnership-img">
                 </div>
-                <h5 style="padding-top: 25px;">Da <b>6 mesi a 2 anni</b> di autonomia, per offrirti una massima tranquillità senza preoccupazioni di ricariche frequenti.</h5>
+                <h5 style="padding-top: 25px;">Da <b>6 mesi a 2 anni</b> di autonomia. Massima tranquillità senza preoccuparti di ricariche frequenti.</h5>
               </div>
             </div>
             <!-- Seconda colonna -->
-            <div class="col-md-4">
+            <div class="col-md-4" style="padding: 35px;">
               <div class="grid-item p-3 border text-center">
                 <div class="mb-3 text-center">
                     <img src="assets/img/img_partnership/produttivita.png" alt="Icon productivity" class="icon-partnership-img">
@@ -255,12 +272,12 @@
               </div>
             </div>
             <!-- Terza colonna -->
-            <div class="col-md-4">
+            <div class="col-md-4" style="padding: 35px;">
               <div class="grid-item p-3 border text-center">
                 <div class="mb-3 text-center">
                     <img src="assets/img/img_partnership/notification.png" alt="Icon notification" class="icon-partnership-img">
                 </div>
-                <h5 style="padding-top: 25px;"><b>Ricevi notifiche sul tuo cellulare</b> se l’animale non è dove dovrebbe essere o il suo comportamento non è normale.</h5>
+                <h5 style="padding-top: 25px;"><b>Ricevi notifiche sul tuo cellulare</b> se l’animale non è dove dovrebbe essere.</h5>
               </div>
             </div>
           </div>
@@ -268,33 +285,42 @@
     </section>
 
     <section class="my-section py-6">
-        <!-- Prima riga: Titolo e descrizione -->
+        <!-- Titolo e descrizione -->
         <div class="container section-title" data-aos="fade-up" style="text-align: center;">
-            <h2></h2>
-            <p>Dettagli sull'Applicazione<br></p>
-          </div><!-- End Section Title -->
+          <h2></h2>
+          <p>Dettagli sull'Applicazione<br></p>
+        </div>
         <div class="container">
           <div class="row">
-
-            <!-- Prima colonna -->
-            <div class="col-md-8" style="padding-right: 200px;">
-                <div class="">
-                  <h5 style="padding-top: 25px"><b>Localizzazione del bestiame sul palmo della mano.</b><br><br>Il localizzatore digitanimal registra l’attività giornaliera del tuo bestiame e ti invia dati sull’attività e la salute dell’animale.
-                  <br><br><b>Personalizza i tuoi avvisi:</b><br><br>&nbsp;&nbsp;&nbsp;&nbsp;1. Avvisi relativi all'attività.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;2. Avvisi relativi alla temperatura.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;3. Avvisi per entrata/uscita dal recinto.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;4. Avvisi di perdita o furto.</h5>
-                </div>
-              </div>
-
-            <!-- Seconda colonna -->
-            <div class="col-md-4">
-              <div class="grid-item p-3 border text-center">
-                <div class="mb-3 text-center">
-                    <img src="assets/img/img_partnership/gps_equino.png" alt="gps digitanimal" style="height: 350px; width: 380px;">
-                </div>
+            <!-- Prima colonna: Testo -->
+            <div class="col-12 col-md-8">
+              <div>
+                <h5 class="mt-3" style="padding-bottom: 20px;">
+                    <b>Localizzazione del bestiame sul palmo della mano.</b><br><br>
+                    Il localizzatore digitanimal registra l’attività giornaliera del tuo bestiame e ti invia dati sull’attività e la salute dell’animale.<br><br>
+                    <b>Personalizza i tuoi avvisi:</b><br><br>
+                    <ul>
+                        <li>Avvisi relativi all'attività.</li><br>
+                        <li>Avvisi relativi alla temperatura.</li><br>
+                        <li>Avvisi per entrata/uscita dal recinto.</li><br>
+                        <li>Avvisi di perdita o furto.</li>
+                    </ul>
+                </h5>
               </div>
             </div>
 
+            <!-- Seconda colonna: Immagine -->
+            <div class="col-12 col-md-4">
+              <div class="grid-item p-3 border text-center">
+                <div class="mb-3">
+                  <img src="assets/img/img_partnership/gps_equino.png" alt="gps digitanimal" class="img-fluid">
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
+
 
 
     </main>
